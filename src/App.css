@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+}
+
+.app-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #0056b3;
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ☀️ Sun animation */
+.sunny {
+  background: linear-gradient(to bottom, #fceabb, #f8b500);
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.sun {
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: spin 5s linear infinite;
+  box-shadow: 0 0 30px rgba(255, 223, 0, 0.8);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
